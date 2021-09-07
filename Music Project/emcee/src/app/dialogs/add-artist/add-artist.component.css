@@ -1,0 +1,10 @@
+.mat-dialog-content {
+    max-height: 70vh !important;
+    width: 749.6px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 14px;
+    height: 220px;
+}
+.inputs{
+    margin: 5px;
+}

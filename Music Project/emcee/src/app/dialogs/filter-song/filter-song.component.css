@@ -1,0 +1,86 @@
+ul.checkbox  {
+    margin: 0;
+    padding: 0;
+    margin-left: 10px;
+    list-style: none;
+  }
+  ul.checkbox li input {
+    margin-right: .25em;
+  }
+  ul.checkbox li {
+    border: 1px transparent solid;
+    display:inline-block;
+    width: 15em;
+  }
+  .filter-col-height {
+    width: 23%;
+    max-height: 180px;
+    overflow: auto;
+    margin-bottom: 20px;
+    margin-right: 10px;
+  }
+  #verAtt{
+    width: 31%;
+    /* max-height: 156px; */
+    height: 180px;
+  }
+  #valRules{
+    width: 31%;
+    /* max-height: 156px; */
+    height: 180px;
+  }
+  #ctoNum{
+    width: 31%;
+    height: 180px;
+  }
+  .mat-checkbox{
+    font-family: Georgia, "Times New Roman", Times, serif;
+  }
+  .mat-checkbox-layout .mat-checkbox-label {
+      line-height: 20px !important;
+      padding: 2px;
+  }
+  .mat-body, .mat-body-1, .mat-typography {
+      font-size: 14px !important;
+  }
+  .mat-dialog-content {
+      max-height: 70vh !important;
+      width: 749.6px;
+      height: 220px;
+      font-family: Georgia, "Times New Roman", Times, serif;
+  }
+  .mat-button {
+    line-height: 30px;
+  }
+  .mat-form-field-appearance-outline .mat-form-field-wrapper {
+      margin: 0 !important;
+  }
+  hr {
+      margin-bottom: auto !important;
+  }
+  #boxes {
+    height: 25px;
+  }
+  
+  .material-icons {
+    color: white;
+    background-color: black;
+  }
+  ::-webkit-scrollbar {
+    height: 5px;
+    width: 5px;
+    scrollbar-width: initial;
+  }
+  ::-webkit-scrollbar-button {
+    background: white;
+  }
+  ::-webkit-scrollbar-track-piece {
+    background: white;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgb(180, 178, 178);
+    border-radius: 15px;
+  }
+  
+  
+  

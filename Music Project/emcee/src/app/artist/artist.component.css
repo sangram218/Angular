@@ -1,0 +1,129 @@
+  th{
+    position: sticky;
+    top: 0;
+  }
+  th.mat-sort-header-sorted {
+    color: white;
+  }
+  .mat-sort-header-content {
+    text-align: center;
+    display: flex;
+    align-items: center;
+  }
+  .mat-table {
+    /* font-family: Roboto, "Helvetica Neue", sans-serif; */
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 14px;
+  }
+  #result_color {
+    color: red;
+  }
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+  
+  table {
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+    width: 97%;
+    /* width: 100%; */
+    scrollbar-width: none;
+  }
+  .table {
+    margin-bottom: 0 !important;
+  }
+  
+  th.mat-header-cell {
+    background-color: black;
+    color: white;
+    font-weight: 400;
+    padding: 10px;
+  }
+  .mat-header-cell {
+    vertical-align: center !important;
+    border-right: 1px solid lightgray;
+    font-size: 14px;
+  }
+  .mat-cell {
+    font-size: 14px !important;
+    min-height: 48px;
+    border-right: 1px solid lightgray;
+  }
+  td {
+    padding-right: 1em !important;
+    padding-left: 1em !important;
+    vertical-align: middle;
+  }
+  tr:hover {
+    background: lightblue !important;
+  }
+  tr {
+    height: 35px !important;
+  }
+  tr.element-row:hover {
+    background: #777;
+  }
+  tr.element-row:active {
+    background: #efefef;
+  }
+  .element-row td {
+    border-bottom-width: 0;
+  }
+  ::ng-deep.mat-paginator .mat-paginator-container{
+    height: 10px;
+    min-height: 45px;
+  }
+  
+  .table-div {
+    height: 74vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scrollbar-width: initial;
+    margin-right: 4px
+  }
+  ::-webkit-scrollbar {
+    width: 5px;
+    scrollbar-width: none;
+  }
+  ::-webkit-scrollbar-button {
+    background: white
+  }
+  ::-webkit-scrollbar-track {
+    background: white;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgb(180, 178, 178);
+    border-radius: 15px;
+  } 
+  
+  .menu-item-icon{
+    opacity: 1 !important;
+    color: rgb(197, 13, 74);
+  }
+
+  .mat-menu-panel{
+    padding: 10px;
+  }
+  
+  
+
+  :host {
+    display: block;
+    margin-top: 1rem;
+  }
+  
+  .open-close-container {
+    border: 1px solid #dddddd;
+    margin-top: 1em;
+    padding: 20px 20px 0px 20px;
+    color: #000000;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  
+  
+  
+  
+  
+  

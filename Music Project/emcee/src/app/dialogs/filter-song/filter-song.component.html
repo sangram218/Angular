@@ -1,0 +1,38 @@
+<div class="h6">Song Filter</div>
+<mat-dialog-content class="mat-typography">
+    <div class="border rounded p-2">
+        <div style="height: 200px;" class="row">
+            <div id="ctoNum" class="filter-col-height">
+                <div id="heading" class="h6 mb-0">Songs</div>
+                <div id="boxes" *ngFor="let songObject of filterService.songsWithCheckbox; let i = index">
+                    <mat-checkbox style="font-family:Georgia, 'Times New Roman', Times, serif" (change)="onSongClick(songObject.songName)" [checked]="songObject.isChecked">
+                        {{songObject.songName}}
+                    </mat-checkbox>
+                </div>
+            </div>
+            <div id="valRules" class="filter-col-height">
+                <div id="heading" class="h6 mb-0">Artists</div>
+                <div id="boxes" *ngFor="let artistObject of filterService.artistsWithCheckbox; let i = index">
+                    <mat-checkbox (change)="onArtistClick(artistObject.artistName)" [checked]="artistObject.isChecked">
+                        {{artistObject.artistName}}
+                    </mat-checkbox>
+                </div>
+            </div>
+            <div id="verAtt" class="filter-col-height">
+                <div id="heading" class="h6 mb-0">Albums</div>
+                <div id="boxes" *ngFor="let albumObject of filterService.albumsWithCheckbox; let i = index">
+                    <mat-checkbox (change)="onAlbumClick(albumObject.albumName)" [checked]="albumObject.isChecked">
+                        {{albumObject.albumName}}
+                    </mat-checkbox>
+                </div>
+            </div>
+        </div>
+    </div>
+</mat-dialog-content>
+
+<div mat-dialog-actions align="end">
+    <button style="margin-right: 5px;" class="btn btn-primary btn-sm" mat-button mat-dialog-close cdkFocusInitial
+        (click)="onFilterApply()">Apply</button>
+    <button class="btn btn-danger btn-sm" mat-button mat-dialog-close cdkFocusInitial 
+        (click)="onReset()">Reset</button>
+</div>

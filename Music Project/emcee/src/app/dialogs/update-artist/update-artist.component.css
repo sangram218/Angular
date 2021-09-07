@@ -1,0 +1,27 @@
+.mat-dialog-content {
+    max-height: 70vh !important;
+    width: 749.6px;
+    height: 200px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 14px;
+}
+
+.inputs{
+    margin: 5px;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    scrollbar-width: none;
+  }
+  ::-webkit-scrollbar-button {
+    background: white
+  }
+  ::-webkit-scrollbar-track {
+    background: white;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgb(180, 178, 178);
+    border-radius: 15px;
+  } 
+

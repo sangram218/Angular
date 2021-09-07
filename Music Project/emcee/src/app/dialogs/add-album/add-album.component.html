@@ -1,0 +1,42 @@
+<h2 mat-dialog-title>Add Album</h2>
+<div mat-dialog-content>
+    <div style="height: 230px;" class="border rounded p-2">
+    <form #f="ngForm" (ngSubmit)="submit(f)">
+        <!-- <div class="inputs form-group">
+            <label for="albumName">Album Name</label>
+            <input required type="text" ngModel name="albumName" #albumName="ngModel" id="albumName" 
+            class="form-control">
+            <div class="alert alert-danger" *ngIf="albumName.touched && !albumName.valid">
+                <div *ngIf="albumName.errors && albumName.errors.required">Album name is required</div>
+            </div>
+        </div> -->
+        <div class="inputs form-group">
+            <label for="albumName">Album Name</label>
+            <input required type="text" ngModel name="albumName" #albumName="ngModel" id="albumName" 
+            class="form-control">
+            <div class="alert alert-danger" *ngIf="albumName.touched && !albumName.valid">
+                <div *ngIf="albumName.errors && albumName.errors.required">Album name is required</div>
+            </div>
+        </div>
+        <div class="inputs form-group">
+            <label for="artistName">Artist Name</label>
+            <select style="font-size: 14px;" required ngModel name="artistId" #artistName="ngModel" id="artistName" class="form-control">
+                <option value="">Select Artist</option>
+                <option *ngFor="let artist of artists" [value]="artist.id">
+                    <!-- {{artist.name}} -->
+                    {{artist.artistName}}
+                </option>
+            </select>
+            <div class="alert alert-danger" *ngIf="artistName.touched && !artistName.valid">
+                <div *ngIf="artistName.errors && artistName.errors.required">Artist name is required</div>
+            </div>
+        </div>
+        <button [disabled]="!f.valid" style="margin:5px" class="btn btn-primary btn-sm" type="submit">Add</button>
+    </form>
+</div>
+    <div mat-dialog-actions align="end">
+        <button style="margin-right: 5px;" class="btn btn-primary btn-sm" mat-button mat-dialog-close
+         mat-dialog-close="true" [disabled]="isNotAdd">Submit</button>
+        <button class="btn btn-danger btn-sm" mat-button mat-dialog-close mat-dialog-close="false" cdkFocusInitial>Cancel</button>
+      </div>
+</div>

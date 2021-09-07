@@ -1,0 +1,24 @@
+<div>
+<h2 mat-dialog-title>Add Artist</h2>
+<div mat-dialog-content>
+    <div style="height: 150px;" class="border rounded p-2">
+    <form #f="ngForm" (ngSubmit)="submit(f)">
+        <div class="inputs form-group">
+            <label for="artistName">Artist Name</label>
+            <input required type="text" ngModel name="artistName" #artistName="ngModel" id="artistName" 
+            class="form-control">
+            <div class="alert alert-danger" *ngIf="artistName.touched && !artistName.valid">
+                <div *ngIf="artistName.errors && artistName.errors.required">Artist name is required</div>
+            </div>
+        </div>
+        <!-- <button type="submit">Submit</button> -->
+        <button [disabled]="!f.valid" style="margin:5px" class="btn btn-primary btn-sm" type="submit">Add</button>
+    </form>
+</div>
+    <div mat-dialog-actions align="end">
+        <button style="margin-right: 5px;" class="btn btn-primary btn-sm" mat-button mat-dialog-close 
+        mat-dialog-close="true" [disabled]="isNotAdd">Submit</button>
+        <button class="btn btn-danger btn-sm" mat-button mat-dialog-close mat-dialog-close="false" cdkFocusInitial>Cancel</button>
+      </div>
+</div>
+</div>

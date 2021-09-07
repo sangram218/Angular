@@ -1,0 +1,22 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div data-testid="id-3" class="container-fluid">
+      <a class="getfont navbar-brand" routerLink="/login">eMCee</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" routerLink="/artist">Artists</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" routerLink="/album">Albums</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" routerLink="/song">Songs</a>
+          </li>
+          <a style="margin-left: 350%;" *ngIf="authService.isLoggedIn()" (click)="authService.logout()" routerLink="/login" class="btn btn-outline-primary">Logout</a>
+        </ul>
+      </div>  
+    </div>
+  </nav>
